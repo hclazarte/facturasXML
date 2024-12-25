@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using facturasXML.EntidadNegocio;
-using Oracle.DataAccess.Client;
+using Oracle.ManagedDataAccess.Client;
 
 namespace facturasXML.AccesoDatos
 {
