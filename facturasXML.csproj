@@ -43,10 +43,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Geosoft">
-      <HintPath>..\BaseGeosoft\bin\Debug\Geosoft.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Oracle.DataAccess, Version=4.122.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\ORACLE\W64_193000_client\ODP.NET\bin\4\Oracle.DataAccess.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -74,6 +75,12 @@
     <Content Include="Fachada.asmx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccesoDatos\FacturasAD.cs" />
+    <Compile Include="AccesoDatos\OrdenesAD.cs" />
+    <Compile Include="EntidadNegocio\Cabecera.cs" />
+    <Compile Include="EntidadNegocio\Detalle.cs" />
+    <Compile Include="EntidadNegocio\Factura.cs" />
+    <Compile Include="EntidadNegocio\Orden.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Fachada.asmx.cs">
       <DependentUpon>Fachada.asmx</DependentUpon>
@@ -89,6 +96,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
